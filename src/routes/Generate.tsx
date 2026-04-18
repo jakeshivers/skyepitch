@@ -105,13 +105,16 @@ export default function Generate() {
             {result && <span className="chip chip-active">Tone · {result.tone}</span>}
           </div>
 
-          {regionInstallers !== undefined && (
-            <div className="mt-3 text-sm">
+          <div className="mt-3 flex flex-wrap gap-2 text-sm">
+            {regionInstallers !== undefined && (
               <span className="chip">
                 Live Skyenet · {regionInstallers} verified installers in {label(f.region!)}
               </span>
-            </div>
-          )}
+            )}
+            {result?.nativeOwnedLift && (
+              <span className="chip chip-active">Native American-owned differentiator surfaced</span>
+            )}
+          </div>
 
           <div className="divider" />
 

@@ -6,33 +6,44 @@ export const VERTICALS = [
   'education',
   'government',
   'commercial-real-estate',
-  'construction',
+  'event-and-tradeshow',
+  'franchise-networks',
+  'multi-location-brands',
 ] as const;
 
 export const PROBLEMS = [
+  'project-delays',
   'installer-availability',
   'geographic-coverage',
   'quality-control',
   'compliance',
+  'brand-consistency',
   'speed-to-completion',
-  'project-delays',
+  'single-source-accountability',
 ] as const;
 
 export const PERSONAS = [
-  'owner',
+  'vp-of-brand',
+  'director-of-retail-experience',
+  'franchise-operations-director',
   'regional-facilities-manager',
   'national-accounts-director',
-  'ops-director',
-  'procurement',
   'general-contractor',
   'brand-manager',
+  'procurement',
 ] as const;
 
 export const SERVICES = [
-  'installation',
-  'inspection',
-  'project-management',
-  'network-services',
+  'sign-installation',
+  'fleet-graphics',
+  'brand-rollouts',
+  'art-and-mural-installation',
+  'ada-wayfinding',
+  'environmental-graphics',
+  'event-and-tradeshow-installation',
+  'survey-and-auditing',
+  'design-services',
+  'print-management',
 ] as const;
 
 export const REGIONS = [
@@ -50,5 +61,23 @@ export type Persona = (typeof PERSONAS)[number];
 export type Service = (typeof SERVICES)[number];
 export type Region = (typeof REGIONS)[number];
 
-export const label = (s: string) =>
-  s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const OVERRIDES: Record<string, string> = {
+  qsr: 'QSR',
+  'ada-wayfinding': 'ADA / Wayfinding',
+  'vp-of-brand': 'VP of Brand',
+};
+
+export const label = (s: string) => {
+  if (OVERRIDES[s]) return OVERRIDES[s];
+  return s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+};
+
+/** Lakota Skye's core narrative — threaded through generated pitches. */
+export const BRAND_NARRATIVE = 'One partner. Total alignment.';
+
+/** Verticals where Native American-owned status is surfaced automatically. */
+export const NATIVE_OWNED_LIFT_VERTICALS: Vertical[] = [
+  'government',
+  'franchise-networks',
+  'multi-location-brands',
+];

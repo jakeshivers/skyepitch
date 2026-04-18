@@ -21,7 +21,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
             <div className="size-7 rounded-lg bg-skye-accent/20 border border-skye-accent/40 grid place-items-center text-skye-accent">✦</div>
             <div className="leading-tight">
               <div className="font-semibold">Skyepitch</div>
-              <div className="text-xs text-skye-mute -mt-0.5">SkyeHub · Lakota Skye</div>
+              <div className="text-xs text-skye-mute -mt-0.5">One partner. Total alignment. · Lakota Skye</div>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-1">

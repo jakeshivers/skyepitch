@@ -15,7 +15,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     id: 'p-001',
-    client: 'National QSR Brand (112 stores)',
+    client: 'National QSR Brand — 112-store rebrand',
     vertical: 'qsr',
     sitesCompleted: 112,
     states: ['TX', 'CA', 'FL', 'GA', 'NC'],
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'p-002',
-    client: 'Regional Hospital System',
+    client: 'Regional Hospital System — ADA wayfinding refresh',
     vertical: 'healthcare',
     sitesCompleted: 18,
     states: ['OH', 'MI', 'IN'],
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'p-003',
-    client: 'Fashion Retailer (Mall Rollout)',
+    client: 'Fashion Retailer — mall-based brand rollout',
     vertical: 'retail',
     sitesCompleted: 63,
     states: ['NY', 'NJ', 'MA', 'PA'],
@@ -47,18 +47,18 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'p-004',
-    client: 'K-12 District Classroom Refresh',
+    client: 'K-12 District — environmental graphics & wayfinding',
     vertical: 'education',
     sitesCompleted: 240,
     states: ['TX'],
     completedOn: '2026-01-15',
     satisfaction: 4.9,
-    testimonial: 'Entire district done in the summer window. Teachers came back to working rooms.',
+    testimonial: 'Entire district done in the summer window. Teachers came back to finished buildings.',
     photoCount: 980,
   },
   {
     id: 'p-005',
-    client: 'Federal Facility Upgrades',
+    client: 'Federal Facility Program — interior signage',
     vertical: 'government',
     sitesCompleted: 9,
     states: ['VA', 'MD', 'DC'],
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'p-006',
-    client: 'Hotel Chain Brand Refresh',
+    client: 'Hotel Chain — brand refresh across 34 properties',
     vertical: 'hospitality',
     sitesCompleted: 34,
     states: ['FL', 'GA', 'TN', 'SC'],
@@ -76,6 +76,27 @@ export const PROJECTS: Project[] = [
     satisfaction: 4.9,
     testimonial: 'Guest-ready finish on every property.',
     photoCount: 289,
+  },
+  {
+    id: 'p-007',
+    client: 'National Franchise Network — exterior signage rollout',
+    vertical: 'franchise-networks',
+    sitesCompleted: 184,
+    states: ['TX', 'FL', 'GA', 'NC', 'VA', 'OH', 'PA', 'AZ'],
+    completedOn: '2026-04-05',
+    satisfaction: 4.8,
+    testimonial: 'Operators actually liked working with the install teams. Rare.',
+    photoCount: 612,
+  },
+  {
+    id: 'p-008',
+    client: 'Beverage Brand — tradeshow activation program',
+    vertical: 'event-and-tradeshow',
+    sitesCompleted: 22,
+    states: ['NV', 'IL', 'NY', 'CA', 'FL'],
+    completedOn: '2026-03-24',
+    satisfaction: 4.9,
+    photoCount: 188,
   },
 ];
 
