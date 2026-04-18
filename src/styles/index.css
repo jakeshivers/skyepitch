@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { font-feature-settings: "cv02", "cv03", "cv04", "cv11"; }
+
+@layer components {
+  .card {
+    @apply bg-skye-panel border border-skye-edge rounded-2xl p-4 shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset,0_8px_24px_-12px_rgba(0,0,0,0.6)];
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-skye-edge bg-skye-panel/60 px-2.5 py-1 text-xs text-skye-mute;
+  }
+  .chip-active {
+    @apply bg-skye-accent/15 text-skye-accent border-skye-accent/40;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-skye-edge bg-skye-panel px-3 py-2 text-sm font-medium text-skye-ink hover:bg-skye-edge/60 transition;
+  }
+  .btn-primary {
+    @apply bg-skye-accent text-skye-bg border-skye-accent hover:bg-skye-accent/90;
+  }
+  .input {
+    @apply w-full rounded-xl border border-skye-edge bg-skye-panel px-3 py-2 text-sm text-skye-ink placeholder:text-skye-mute focus:outline-none focus:ring-2 focus:ring-skye-accent/50;
+  }
+  .label { @apply text-xs uppercase tracking-wider text-skye-mute; }
+  .divider { @apply border-t border-skye-edge my-4; }
+}
